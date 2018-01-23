@@ -28,6 +28,12 @@ job "prometheus" {
         port_map {
           http = 9090
         }
+      
+      artifact {
+         source      = "https://raw.githubusercontent.com/fguevara1979/jobs/master/prometheus.yml"
+         destination = "/etc/prometheus/prometheus.yml"
+       }
+
       }
 
       resources {
