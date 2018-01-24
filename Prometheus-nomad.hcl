@@ -33,7 +33,7 @@ job "prometheus" {
 
       artifact {
          source      = "https://raw.githubusercontent.com/fguevara1979/jobs/master/prometheus.yml"
-         destination = "/etc/prometheus/prometheus.yml"
+         destination = "/etc/prometheus"
         }
 
       resources {
